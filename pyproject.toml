@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "satellite-open-source"
+version = "0.1.0"
+authors = [
+  { name="Bahattin Yunus Cetin" },
+]
+description = "Comprehensive open-source tools for satellite communication and orbital analysis."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "astropy",
+    "skyfield",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
